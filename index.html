@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Santa Claus Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body" onload="santaAnimationStart(); createBoxes();" onkeypress="keyCheck(event);">
+   
+    <div id="snowflakes">
+    <div class="snowflakes" aria-hidden="true"></div>
+    </div>
+    <div class="back" id="back">
+        <div class="t1" id="t1">- Press Enter or Space To Start The Game -</div>
+        <img src="Idle (1).png" alt="santa" class="santa" id="santa">
+        <div class=" score" id ="score">0</div>
+    </div>
+
+    <div class="start" id="start">
+        <img class="logo" alt="logo" src="logo.png">
+        <img class="r1" alt="r1" src="rungif.gif">
+
+        <div class="s1">Santa Claus Running Game</div>
+        <div class="s2">- Click Below To Launch The Game - </div>
+        <button class="btn2" onclick="gameMenu()">Start</button>
+        <div class="s3">© All Rights Reserved</div>
+    </div>
+
+    <div class="end" id="end">
+        <div class="s4">Game Over..😫</div>
+        <div class="s5">Your Score</div>
+        <div class="s6" id="lastScore">0</div>
+        <button class="btn" onclick="reload()"><div class="btnanimation">Try Again</div> </button>
+    </div>
+
+    <div class="end2" id="end2">
+        <div class="s7">Congratulations</div>
+        <div class="s8">You Win..</div>
+        <div class="s9">Your Score</div>
+        <div class="s10" id="winScore">0</div>
+        <button class="btn" onclick="reload()">Restart</button>
+        <div class="credit">Created By Himesh Tharusha</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
