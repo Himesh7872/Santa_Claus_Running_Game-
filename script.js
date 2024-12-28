@@ -8,7 +8,7 @@ if(santaImageNumber == 16){                                         //Idle Anima
     santaImageNumber = 1;
 }
     santaImageNumber = santaImageNumber + 1;
-    santa.src="idle ("+santaImageNumber+").png";
+    santa.src="idle"+santaImageNumber+".png";
 }
 function santaAnimationStart(){
     santaAnimationNumber = setInterval(santaAnimation,150);
