@@ -24,7 +24,7 @@ function runAnimation(){
     if(runImageNumber == 11){                                       //Run Animation
         runImageNumber = 1;
     } 
-    santa.src ="run ("+runImageNumber+").png";
+    santa.src ="run"+runImageNumber+".png";
 }
 function runAnimationStart(){
     runAnimationNumber = setInterval(runAnimation,100);
@@ -55,7 +55,7 @@ function jumpAnimation(){
         runAnimationStart();
         runSound.play();
     }
-    santa.src = "jump ("+jumpImageNumber+").png"
+    santa.src = "jump"+jumpImageNumber+".png"
 }
 function jumpAnimationStart(){
     clearInterval(santaAnimationNumber);
@@ -169,7 +169,7 @@ function santaDeadAnimation(){
         document.getElementById("end").style.visibility="visible";
         document.getElementById("lastScore").innerHTML = score;
     }
-    santa.src="Dead ("+deadImageNumber+").png";
+    santa.src="Dead"+deadImageNumber+".png";
 }
 
 function reload(){
